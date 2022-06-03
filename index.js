@@ -58,7 +58,7 @@ response.on("data",function(data){
 });
 app.get("/ToDoList",function(req,res){
   
-  const day =date.getDay();
+  const day =date.getDate();
   res.render("list",{kindOfDay:day,newListItems:items});
   });
   app.post("/ToDoList",function(req,res){
