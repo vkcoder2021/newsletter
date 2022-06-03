@@ -3,7 +3,8 @@ const request= require("request");
 const https = require("https");
 const bodyParser = require("body-parser");
 const app = express();
-var items =["Buy Food","Cook Food","Eat Food"];
+const date = require(__dirname + "/date.js");
+const items =["Meeting with client1","Meeting with client 2","Meeting 3"];
 app.set('view engine','ejs');
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
@@ -56,13 +57,8 @@ response.on("data",function(data){
 
 });
 app.get("/ToDoList",function(req,res){
-  var today =new Date();
-  var options={
-      weekday:"long",
-      day:"numeric",
-      month:"long"
-  };
-  var day=today.toLocaleDateString("en-US",options);
+  
+  const day =date.getDay();
   res.render("list",{kindOfDay:day,newListItems:items});
   });
   app.post("/ToDoList",function(req,res){

@@ -3,24 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>To Do List</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1><%= kindOfDay %></h1>
-    <ul>
-        <%for(var i=0;i<newListItems.length;i++){%>
-            <li> <%= newListItems[i]%></li>
-        <% } %>
-        
-    </ul>
-    <form class="" action="/ToDoList" method="post">
-        <input type ="text" name="newItem">
-        <button type ="submit" name="button">Add</button>
+    <div class="box" id ="heading">
+        <h1><%= kindOfDay %></h1>
+    </div>
+   <div class="box">
+      
+    <%for(var i=0;i<newListItems.length;i++){%>
+        <div class="item">
+        <input type ="checkbox">
+        <p> <%= newListItems[i]%></p>
+        </div>
+    <% } %>
+    
 
-    </form>
-   <form action="/" method ="get">
-    <button type="submit">LogOut</button>
-   </form>
-   
+<form class="item" action="/ToDoList" method="post">
+    <input type ="text" name="newItem" placeholder="New Item" autocomplete="off">
+    <button type ="submit" name="button" id="button1">+</button>
+
+</form>
+
+
+ 
+</div>
+<div class="box">
+    <form class="item" action="/failed" method="post">
+  
+        <button type ="submit" name="button" id="button2">out</button>
+    
+    </form> 
+</div>
+    
+
     
 </body>
 </html>
