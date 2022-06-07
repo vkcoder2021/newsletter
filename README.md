@@ -4,14 +4,36 @@
 
 # newsletter #To do List 
 
+
+
+
+Hii ,My name is Vikash Kumar .
+
+MERN STACK DEVELOPER,
+MECHANICAL ENGINEER ,
+BENGALURU,
+RANCHI ,JHARKHAND,INDIA
+Cracked JEE MAINS ,COMEDK Appeared in JEE ADVANCE,
+Karnataka State Rank 20 ,
+TOPPER 
+
+
+
+![DSC_7744](https://user-images.githubusercontent.com/96519578/172456816-83759358-d531-42e6-ad75-20f03002bd6b.jpg)
+
+
+My LinkedIn ID Profile link
+
+
+https://www.linkedin.com/in/vikash-kumar-967b13201
+
+
+
 Node. Js, Express. JS, Body -parser 
 ![newsletter1](https://user-images.githubusercontent.com/96519578/171935466-8c11866c-8385-4cc3-ba38-5d171cac5446.png)
 
 
-My LinkedIn Id 
 
-
-https://www.linkedin.com/in/vikash-kumar-967b13201
 
 
 Link to website :
